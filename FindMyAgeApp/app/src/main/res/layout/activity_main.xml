@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C00BFA5"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etDOB"
+        android:layout_width="198dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:hint="Enter your DOB"
+        android:inputType="date"
+        android:textColor="#6200EA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvShowAge"
+        android:layout_width="168dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="Age shows here"
+        android:textColor="#FFAB00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buGetAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDOB" />
+
+    <Button
+        android:id="@+id/buGetAge"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginBottom="213dp"
+        android:backgroundTint="#00C853"
+        android:gravity="center"
+        android:onClick="buUserAgeClick"
+        android:text="Get My Age"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowAge"
+        tools:ignore="OnClick,TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
